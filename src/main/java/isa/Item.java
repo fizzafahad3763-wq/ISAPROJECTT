@@ -55,6 +55,10 @@ public abstract class Item {
         }
     }
     
+    public Member getBorrower(){
+        return onLoanTo;
+    }
+    
     public boolean isAvailable() {
         return onLoanTo == null;
     }
@@ -65,4 +69,5 @@ public abstract class Item {
             this.onLoanTo = null;
         }
     }
+    
 }
