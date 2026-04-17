@@ -15,7 +15,7 @@ import java.util.ArrayList;
 public class Collection 
 {
     
-    private ArrayList>item> itemList;
+    private ArrayList<Item> itemList;
     
     public Collection()
     {
@@ -39,7 +39,7 @@ public class Collection
         }
     }
     
-    public coid addDVD(String title, String director, Member donator, String language, String[] audioLanguages)
+    public void addDVD(String title, String director, Member donator, String language, String[] audioLanguages)
     {
         DVD dvd = new DVD(title, director, donator, language, audioLanguages);
         itemList.add(dvd);
