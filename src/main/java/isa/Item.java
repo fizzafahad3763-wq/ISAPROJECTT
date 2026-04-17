@@ -50,8 +50,8 @@ public abstract class Item {
         if (isAvailable()) {
             this.onLoanTo = borrower;
         
-        } else{
-                    System.out.println("Item is currenlty being loaned");
+    } else{
+            System.out.println("Item is currenlty being loaned");
         }
     }
     
